@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.map {
+  min-height: 100vh;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.area {
+  fill: #ccc;
+  stroke: #333;
+  stroke-width: 1;
+
+  &:hover {
+    fill: #fc0 !important;
+    cursor: help;
+  }
+}
+
+.info-panel {
+  background-color: rgba(255, 255, 255, .7);
+  padding: .3em;
+  font-size: .8em;
+  font-family: Helvetica, Arial, sans-serif;
+  position: absolute;
+
+  &::first-line {
+    font-weight: bold;
+  }
+}

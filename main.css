@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.map {
+  min-height: 100vh;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.area {
+  fill: #ccc;
+  stroke: #333;
+  stroke-width: 1;
+}
+
+.area:hover {
+  fill: #fc0 !important;
+  cursor: help;
+}
+
+.info-panel {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: .3em;
+  font-size: .8em;
+  font-family: Helvetica, Arial, sans-serif;
+  position: absolute;
+}
+
+.info-panel::first-line {
+  font-weight: bold;
+}
+/*# sourceMappingURL=main.css.map */
